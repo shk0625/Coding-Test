@@ -13,7 +13,7 @@ public class Main {
             sc.next(); //과목명
             double calculator = sc.nextDouble(); //학점
             String grade = sc.next(); // 등급
-            if(grade == "P"){
+            if(grade.equals("P")){
                 continue;
             }
             sum+=ToAverage(grade)*calculator;
