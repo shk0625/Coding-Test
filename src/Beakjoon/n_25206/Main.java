@@ -10,17 +10,14 @@ public class Main {
         double sum = 0.000;
 
         for(int i=0; i<20; i++){
-            String grades = sc.next(); //과목명
+            sc.next(); //과목명
             double calculator = sc.nextDouble(); //학점
             String grade = sc.next(); // 등급
-
             if(grade == "P"){
                 continue;
             }
-
-            sum+=ToAverage(grades)*calculator;
+            sum+=ToAverage(grade)*calculator;
             average+=calculator;
-
         }
         System.out.println(sum/average);
     }
@@ -36,11 +33,11 @@ public class Main {
             case "B0":
                 return 3.0000;
             case "C+":
-                return 2.50000;
+                return 2.5000;
             case "C0":
-                return 2.00000;
+                return 2.0000;
             case "D+":
-                return 1.50000;
+                return 1.5000;
             case "D0":
                 return 1.0000;
             case "F":
