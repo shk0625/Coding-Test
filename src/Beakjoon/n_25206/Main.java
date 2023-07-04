@@ -42,8 +42,8 @@ public class Main {
                 return 1.0000;
             case "F":
                 return 0.0000;
+            default:
+                 return -1.0000;
         }
-        return -1.0000;
     }
-
 }
